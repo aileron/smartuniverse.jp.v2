@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@import "onepage-scroll";
+@import "menu";
+
+html {
+  background-color: black;
+}
+
+h1,h2,p {
+  color: white;
+}
+
+section {
+  overflow: auto;
+}
+
+.News {
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+  }
+  h1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: image_url('logo_white.png');
+    width: 463px;
+    height: 112px;
+
+    color: white;
+    text-shadow: 0 1px 3px black;
+    font-size: 54px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.Philosophy-1 {
+  background-color: rgb(113,20,21);
+  background-image: image_url('cover-network.png');
+  // background-image: image_url('cover-philosophy-red.png');
+  background-position: right top;
+
+  article {
+    color: white;
+
+    position: absolute;
+    margin: 0 auto;
+    left: auto;
+
+    width: 600px;
+    top: 140px;
+    right: 115px;
+
+  }
+}
+
+.Philosophy-2 {
+  background-image: image_url('cover-philosophy.jpg');
+  background-size: cover;
+
+  article {
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 300px;
+  }
+}
+
+.Vision {
+  background-image: image_url('cover-vision.png');
+  background-position: right top;
+
+  article {
+    color: white;
+
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    bottom: 140px;
+    left: auto;
+    right: 10%;
+  }
+}
+
+.Career {
+  background-color: black;
+  transition: background 1.5s linear;
+  background-image: image_url('cover-career.jpg');
+
+  background-position: right top;
+  background-size: cover ;
+  @media (max-width: 1151px) {
+    width: 100%;
+  }
+
+  article {
+    position: absolute;
+    margin: 0 auto;
+    width: 600px;
+    top: 140px;
+    left: auto;
+    right: 10%;
+
+    text-shadow: 0 1px 3px black;
+  }
+}
+
+.Corporate {
+  background-color: white;
+  article {
+     h1 {
+       font-size: 32px;
+       color: #1C4FB3;
+       letter-spacing: 0.08em;
+       font-family: 'Lato', sans-serif;
+     }
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     width: 500px;
+     height: 500px;
+  }
+}
