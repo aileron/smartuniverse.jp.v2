@@ -1,6 +1,8 @@
 $ ->
-  $(".Career").livequery ->
-    #$(this).fadeIn(300)
+  $("#news-readmore").click ->
+    $("#news-more").fadeIn()
+  $(".close").click ->
+    $(this).parent("article").fadeOut()
 
   $('.main').onepage_scroll
     sectionContainer: 'section'
