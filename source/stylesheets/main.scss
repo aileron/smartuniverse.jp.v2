@@ -38,6 +38,21 @@
 
 html.ua-mobile {
   video{display: none}
+
+  @media (orientation:portrait){
+    section {
+      article {
+        width: 80%;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 html {
@@ -116,12 +131,6 @@ section {
       margin: 0;
       font-weight: normal;
 
-
-      b {
-
-      }
-    }
-    p {
     }
 
     position: absolute;
