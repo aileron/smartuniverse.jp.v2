@@ -8,8 +8,20 @@
 html {
   background-color: black;
   font-size: 12px;
-  @media screen and (min-width : 768px) { font-size: 14px }
-  @media screen and (min-width : 1024px){ font-size: 16px }
+
+  video {
+    display: none;
+  }
+
+  @media screen and (min-width : 768px) { 
+    video{display: block}
+    font-size: 14px;
+  }
+  @media screen and (min-width : 1024px){
+    font-size: 16px;
+
+    min-height: 728px;
+  }
 }
 
 h1,h2,p {
@@ -151,6 +163,13 @@ section {
   background-position: center bottom;
   color: white;
 
+  .en & {
+    dt{font-size: 0.8em}
+    dt{width: 23%}
+    .small{font-size:0.6em}
+    line-height: 1em;
+  }
+
   article {
      h1 {
        text-align: center;
@@ -163,7 +182,7 @@ section {
        padding: 10px 0;
        float:left;
        clear:left;
-       width:7em;
+       width:20%;
 
        border-bottom: 1px solid white;
        &:first-child {
@@ -174,7 +193,7 @@ section {
      dd {
        font-size: 0.9em;
        float:left;
-       width:29em;
+       width:70%;
 
        padding: 10px 0;
        border-top: 1px solid white;
@@ -195,6 +214,10 @@ section {
 }
 
 .Contact {
+  .en & {
+    dt{ font-size: 0.8em; line-height: 1em }
+    .small {font-size: 0.7em }
+  }
 
   background: -webkit-linear-gradient(90deg, #005C97 10%, #363795 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #005C97 10%, #363795 90%); /* FF3.6+ */
@@ -245,7 +268,7 @@ section {
        padding: 10px 0;
        float:left;
        clear:left;
-       width:7em;
+       width:20%;
 
        border-bottom: 1px solid white;
        &:first-child {
@@ -256,7 +279,7 @@ section {
      dd {
        font-size: 0.9em;
        float:left;
-       width:29em;
+       width:70%;
        border-top: 1px solid white;
        &:last-child {
          border-bottom: 1px solid white;

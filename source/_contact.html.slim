@@ -3,7 +3,11 @@ article
 
   form(method="post" action="http://still-ravine-8044.herokuapp.com")
     dl
-      dt=t "contact.company"
+      dt.small= t "contact.email"
+      dd
+        input(type="text" name="email")
+
+      dt=t "contact.corporate"
       dd 
         input(type="text" name="company")
       
@@ -11,10 +15,6 @@ article
       dd 
         input(type="text" name="name")
       
-      dt= t "contact.email"
-      dd
-        input(type="text" name="email")
-
       dt= t "contact.phone_number"
       dd
         input(type="text" name="phone_number")
@@ -23,6 +23,6 @@ article
       dd
         textarea(name="content")
 
-    input(type="submit" value="送信")
+    input(type="submit" value="#{t "contact.submit"}")
 
 
