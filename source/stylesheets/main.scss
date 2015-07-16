@@ -81,8 +81,11 @@ section {
     width: 45%;
 
     @media (max-width: 1200px) {
-      right: 165px;
-      width: 400px;
+      right: 85px;
+      width: 384px;
+      h1 {
+        font-size: 32px;
+      }
     }
     top: 30%;
     right: 10%;
