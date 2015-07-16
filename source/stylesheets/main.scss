@@ -3,25 +3,25 @@
 @import "onepage-scroll";
 @import "menu";
 
-
+html.ua-mobile {
+  video{display: none}
+}
 
 html {
   background-color: black;
   font-size: 12px;
 
-  video {
-    display: none;
-  }
-
   @media screen and (min-width : 768px) { 
-    video{display: block}
     font-size: 14px;
   }
   @media screen and (min-width : 1024px){
     font-size: 16px;
-
     min-height: 728px;
   }
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, sans-serif;
 }
 
 h1,h2,p {
@@ -105,14 +105,33 @@ section {
 }
 
 .Philosophy-2 {
-  background-image: image_url('cover-philosophy.jpg');
+  background-image: image_url('cover-philosophy.png');
   background-size: cover;
 
+  .en & {
+    .text {
+      text-align: center;
+    }
+    h2 {
+      font-size: 22px;
+    }
+  }
+
   article {
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    h2 {
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     color: white;
     position: absolute;
     left: 100px;
-    top: 100px;
+    top: 50px;
     width: 300px;
   }
 }
@@ -125,10 +144,26 @@ section {
   article {
     color: white;
 
+    h1 {
+      font-size: 50px;
+      font-weight: normal;
+      margin: 0;
+      text-align: center;
+    }
+    h2 {
+      font-weight: normal;
+      text-align: center;
+      font-size: 25px;
+      margin: 0;
+    }
+    p {
+      font-size: 0.95em;
+    }
+
     position: absolute;
     margin: 0 auto;
     width: 300px;
-    bottom: 140px;
+    bottom: 108px;
     left: auto;
     right: 10%;
   }
@@ -224,7 +259,6 @@ section {
   background:     -ms-linear-gradient(90deg, #005C97 10%, #363795 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #005C97 10%, #363795 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #005C97 10%, #363795 90%); /* W3C */
-
 
   input,textarea{
     border: none;
