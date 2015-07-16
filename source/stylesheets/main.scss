@@ -10,8 +10,7 @@ html.ua-mobile {
 html {
   background-color: black;
   font-size: 12px;
-
-  @media screen and (min-width : 768px) { 
+  @media screen and (min-width : 768px) {
     font-size: 14px;
   }
   @media screen and (min-width : 1024px){
@@ -33,11 +32,10 @@ section {
 }
 
 .News {
-  
   video {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: -100px;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -85,7 +83,7 @@ section {
     }
     p {
     }
- 
+
     position: absolute;
     margin: 0 auto;
     left: auto;
@@ -138,7 +136,7 @@ section {
 
 .Vision {
   background-image: image_url('cover-vision.png');
-  background-position: right top;
+  background-position: right bottom;
   background-size: cover;
 
   article {
@@ -162,27 +160,48 @@ section {
 
     position: absolute;
     margin: 0 auto;
-    width: 300px;
-    bottom: 108px;
+    width: 310px;
     left: auto;
     right: 10%;
+    bottom: 142px;
   }
 }
 
 .Career {
-  background-color: black;
-  background-image: image_url('cover-career.png');
+  .right {
+    text-align: right;
+  }
 
-  background-position: right top;
+  p {margin: 0}
+
+  background-color: black;
+  background-image: image_url('cover-career.jpg');
+
+  background-position: right bottom;
   background-size: cover ;
+
   @media (max-width: 1151px) {
     width: 100%;
   }
 
+
   article {
+
+    h1 {
+      font-size: 5em;
+      text-align: center;
+      margin: 0;
+      font-weight: normal;
+    }
+
     position: absolute;
     margin: 0 auto;
-    width: 600px;
+    width: 560px;
+
+    @media (min-width : 1024px){
+      width: 640px
+    }
+
     top: 140px;
     left: auto;
     right: 10%;
@@ -249,16 +268,14 @@ section {
 }
 
 .Contact {
+  background-color: white;
+
+  font-family: "Roboto";
+  color: rgb(80,80,80);
   .en & {
     dt{ font-size: 0.8em; line-height: 1em }
     .small {font-size: 0.7em }
   }
-
-  background: -webkit-linear-gradient(90deg, #005C97 10%, #363795 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #005C97 10%, #363795 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #005C97 10%, #363795 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #005C97 10%, #363795 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #005C97 10%, #363795 90%); /* W3C */
 
   input,textarea{
     border: none;
@@ -268,6 +285,7 @@ section {
   input {
     margin:0;
     box-sizing: border-box;
+    border: 2px solid #ddd;
   }
   input[type="submit"] {
     display: inline-block;
@@ -285,32 +303,29 @@ section {
   textarea {
     resize: vertical;
     height: 100px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
   }
 
   article {
-    color: white;
      h1 {
-       color: white;
        text-align: center;
        letter-spacing: 0.08em;
        font-family: 'Lato', sans-serif;
      }
      dt {
        box-sizing: border-box;
-       text-align: center;
+       text-align: right;
        font-weight: bold;
        padding: 10px 0;
        float:left;
        clear:left;
        width:20%;
-
-       border-bottom: 1px solid white;
-       &:first-child {
-         border-top: 1px solid white;
-       }
+       line-height: 1em;
      }
 
      dd {
+       line-height: 1em;
        font-size: 0.9em;
        float:left;
        width:70%;
