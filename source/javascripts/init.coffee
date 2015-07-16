@@ -11,6 +11,8 @@ $ ->
     pagination: true
     updateURL: true
     beforeMove: (index) ->
+      document.querySelector(".News video").currentTime = 0;
+
       section = $('.main section')[ index - 1 ]
       $section = $(section)
       if $section.hasClass("fadeIn")
