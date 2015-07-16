@@ -3,8 +3,13 @@
 @import "onepage-scroll";
 @import "menu";
 
+
+
 html {
   background-color: black;
+  font-size: 12px;
+  @media screen and (min-width : 768px) { font-size: 14px }
+  @media screen and (min-width : 1024px){ font-size: 16px }
 }
 
 h1,h2,p {
@@ -16,6 +21,7 @@ section {
 }
 
 .News {
+  
   video {
     position: fixed;
     right: 0;
@@ -52,18 +58,34 @@ section {
   background-image: image_url('cover-network.png');
   // background-image: image_url('cover-philosophy-red.png');
   background-position: right top;
+  background-size: cover;
 
   article {
     color: white;
 
+    h1{
+      margin: 0;
+      font-weight: normal;
+
+      b {
+
+      }
+    }
+    p {
+    }
+ 
     position: absolute;
     margin: 0 auto;
     left: auto;
 
-    width: 600px;
-    top: 140px;
-    right: 115px;
+    width: 45%;
 
+    @media (max-width: 1200px) {
+      right: 165px;
+      width: 400px;
+    }
+    top: 30%;
+    right: 10%;
   }
 }
 
@@ -83,6 +105,7 @@ section {
 .Vision {
   background-image: image_url('cover-vision.png');
   background-position: right top;
+  background-size: cover;
 
   article {
     color: white;
@@ -98,8 +121,7 @@ section {
 
 .Career {
   background-color: black;
-  transition: background 1.5s linear;
-  background-image: image_url('cover-career.jpg');
+  background-image: image_url('cover-career.png');
 
   background-position: right top;
   background-size: cover ;
@@ -121,12 +143,41 @@ section {
 
 .Corporate {
   background-color: white;
+  background-image: image_url('cover-corporate.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+
   article {
      h1 {
-       font-size: 32px;
-       color: #1C4FB3;
+       text-align: center;
        letter-spacing: 0.08em;
        font-family: 'Lato', sans-serif;
+     }
+     dt {
+       text-align: center;
+       font-weight: bold;
+       padding: 10px 0;
+       float:left;
+       clear:left;
+       width:7em;
+
+       border-bottom: 1px solid white;
+       &:first-child {
+         border-top: 1px solid white;
+       }
+     }
+
+     dd {
+       font-size: 0.9em;
+       float:left;
+       width:29em;
+
+       padding: 10px 0;
+       border-top: 1px solid white;
+       &:last-child {
+         border-bottom: 1px solid white;
+       }
      }
 
      position: absolute;
@@ -135,7 +186,86 @@ section {
      right: 0;
      bottom: 0;
      margin: auto;
-     width: 500px;
+     width: 600px;
      height: 500px;
   }
+}
+
+.Contact {
+
+  background: -webkit-linear-gradient(90deg, #005C97 10%, #363795 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #005C97 10%, #363795 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #005C97 10%, #363795 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #005C97 10%, #363795 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #005C97 10%, #363795 90%); /* W3C */
+
+
+  input,textarea{
+    border: none;
+    outline: none;
+    width: 100%;  -webkit-appearance: none;
+  }
+  input {
+    margin:0;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    margin: 0 auto;
+    color: #666;
+    background: white;
+    border: none;
+    line-height: 1.4em;
+    font-size: 18px;
+    padding: 1em 3em;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    margin-top: 20px;
+  }
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  article {
+    color: white;
+     h1 {
+       color: white;
+       text-align: center;
+       letter-spacing: 0.08em;
+       font-family: 'Lato', sans-serif;
+     }
+     dt {
+       box-sizing: border-box;
+       text-align: center;
+       font-weight: bold;
+       padding: 10px 0;
+       float:left;
+       clear:left;
+       width:7em;
+
+       border-bottom: 1px solid white;
+       &:first-child {
+         border-top: 1px solid white;
+       }
+     }
+
+     dd {
+       font-size: 0.9em;
+       float:left;
+       width:29em;
+       border-top: 1px solid white;
+       &:last-child {
+         border-bottom: 1px solid white;
+       }
+     }
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+     width: 600px;
+  }
+
 }

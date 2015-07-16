@@ -47,6 +47,8 @@
 #   end
 # end
 
+activate :i18n, :mount_at_root => :ja
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
