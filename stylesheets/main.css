@@ -1,0 +1,384 @@
+/* line 1, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms; }
+
+/* line 9, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 17, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d; }
+
+/* line 26, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%; }
+
+/* line 32, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto; }
+
+/* line 36, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important; }
+
+/* line 41, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%; }
+
+/* line 50, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+.disabled-onepage-scroll .onepage-pagination {
+  display: none; }
+
+/* line 54, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/onepage-scroll.css */
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit; }
+
+/* line 1, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+#lang {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 50px;
+  width: 87px;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  padding: 15px 0 15px 0;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid white;
+  background-color: black; }
+
+/* line 21, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+.module-triangle-left, .onepage-pagination li a.active {
+  position: relative; }
+  /* line 24, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .module-triangle-left:after, .onepage-pagination li a.active:after {
+    content: "";
+    border: 8px solid transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -12px;
+    top: 6px;
+    margin-top: -8px; }
+
+/* line 35, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+.onepage-pagination a {
+  color: white; }
+  /* line 38, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a[data-index="1"]:before {
+    content: "News"; }
+  /* line 39, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a[data-index="2"]:before {
+    content: "Philosophy"; }
+  /* line 41, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a.active[data-index="3"]:after {
+    display: block;
+    content: "";
+    border: 8px solid transparent;
+    border-left-color: white;
+    position: absolute;
+    left: -12px;
+    top: -30px;
+    margin-top: -8px; }
+  /* line 52, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a[data-index="4"]:before {
+    content: "Vision"; }
+  /* line 53, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a[data-index="5"]:before {
+    content: "Career"; }
+  /* line 54, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a[data-index="6"]:before {
+    content: "Corporate"; }
+  /* line 55, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination a[data-index="7"]:before {
+    content: "Contact"; }
+
+/* line 58, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+.onepage-pagination {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  width: 75px;
+  padding: 15px 0 15px 12px;
+  font-size: 12px; }
+  /* line 69, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+  .onepage-pagination li {
+    padding: 0;
+    text-align: left;
+    margin-bottom: 20px; }
+    /* line 74, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+    .onepage-pagination li:last-child {
+      margin-bottom: 0; }
+    /* line 78, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/menu.scss */
+    .onepage-pagination li a {
+      text-decoration: none; }
+
+/* line 8, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+html {
+  background-color: black;
+  font-size: 12px; }
+  @media screen and (min-width: 768px) {
+    /* line 8, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    html {
+      font-size: 14px; } }
+  @media screen and (min-width: 1024px) {
+    /* line 8, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    html {
+      font-size: 16px; } }
+
+/* line 15, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+h1, h2, p {
+  color: white; }
+
+/* line 19, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+section {
+  overflow: auto; }
+
+/* line 25, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.News video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover; }
+/* line 36, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.News h1 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/images/logo_white.png");
+  width: 463px;
+  height: 112px;
+  color: white;
+  text-shadow: 0 1px 3px black;
+  font-size: 54px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+/* line 56, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.Philosophy-1 {
+  background-color: #711415;
+  background-image: url("/images/cover-network.png");
+  background-position: right top;
+  background-size: cover; }
+  /* line 63, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Philosophy-1 article {
+    color: white;
+    position: absolute;
+    margin: 0 auto;
+    left: auto;
+    width: 45%;
+    top: 30%;
+    right: 10%; }
+    /* line 66, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Philosophy-1 article h1 {
+      margin: 0;
+      font-weight: normal; }
+    @media (max-width: 1200px) {
+      /* line 63, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+      .Philosophy-1 article {
+        right: 165px;
+        width: 400px; } }
+
+/* line 92, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.Philosophy-2 {
+  background-image: url("/images/cover-philosophy.jpg");
+  background-size: cover; }
+  /* line 96, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Philosophy-2 article {
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 300px; }
+
+/* line 105, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.Vision {
+  background-image: url("/images/cover-vision.png");
+  background-position: right top;
+  background-size: cover; }
+  /* line 110, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Vision article {
+    color: white;
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    bottom: 140px;
+    left: auto;
+    right: 10%; }
+
+/* line 122, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.Career {
+  background-color: black;
+  background-image: url("/images/cover-career.png");
+  background-position: right top;
+  background-size: cover; }
+  @media (max-width: 1151px) {
+    /* line 122, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Career {
+      width: 100%; } }
+  /* line 132, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Career article {
+    position: absolute;
+    margin: 0 auto;
+    width: 600px;
+    top: 140px;
+    left: auto;
+    right: 10%;
+    text-shadow: 0 1px 3px black; }
+
+/* line 144, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.Corporate {
+  background-color: white;
+  background-image: url("/images/cover-corporate.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  color: white; }
+  /* line 151, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Corporate article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 600px;
+    height: 500px; }
+    /* line 152, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Corporate article h1 {
+      text-align: center;
+      letter-spacing: 0.08em;
+      font-family: 'Lato', sans-serif; }
+    /* line 157, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Corporate article dt {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 0;
+      float: left;
+      clear: left;
+      width: 7em;
+      border-bottom: 1px solid white; }
+      /* line 166, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+      .Corporate article dt:first-child {
+        border-top: 1px solid white; }
+    /* line 171, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Corporate article dd {
+      font-size: 0.9em;
+      float: left;
+      width: 29em;
+      padding: 10px 0;
+      border-top: 1px solid white; }
+      /* line 178, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+      .Corporate article dd:last-child {
+        border-bottom: 1px solid white; }
+
+/* line 194, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+.Contact {
+  background: -webkit-linear-gradient(90deg, #005C97 10%, #363795 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #005C97 10%, #363795 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #005C97 10%, #363795 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #005C97 10%, #363795 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #005C97 10%, #363795 90%);
+  /* W3C */ }
+  /* line 203, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Contact input, .Contact textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    -webkit-appearance: none; }
+  /* line 208, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Contact input {
+    margin: 0;
+    box-sizing: border-box; }
+  /* line 212, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Contact input[type="submit"] {
+    display: inline-block;
+    margin: 0 auto;
+    color: #666;
+    background: white;
+    border: none;
+    line-height: 1.4em;
+    font-size: 18px;
+    padding: 1em 3em;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    margin-top: 20px; }
+  /* line 225, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Contact textarea {
+    resize: vertical;
+    height: 100px; }
+  /* line 230, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+  .Contact article {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px; }
+    /* line 232, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Contact article h1 {
+      color: white;
+      text-align: center;
+      letter-spacing: 0.08em;
+      font-family: 'Lato', sans-serif; }
+    /* line 238, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Contact article dt {
+      box-sizing: border-box;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px 0;
+      float: left;
+      clear: left;
+      width: 7em;
+      border-bottom: 1px solid white; }
+      /* line 248, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+      .Contact article dt:first-child {
+        border-top: 1px solid white; }
+    /* line 253, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+    .Contact article dd {
+      font-size: 0.9em;
+      float: left;
+      width: 29em;
+      border-top: 1px solid white; }
+      /* line 258, /Users/aileron/Workspace/smartuniverse.jp.v2/source/stylesheets/main.scss */
+      .Contact article dd:last-child {
+        border-bottom: 1px solid white; }
