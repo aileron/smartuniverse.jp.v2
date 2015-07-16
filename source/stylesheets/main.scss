@@ -33,6 +33,11 @@ section {
 
 .News {
   background-image: image_url('yoko.png');
+  .ua-mobile & {
+    background-image: image_url('cover-top.png');
+    background-size: cover;
+  }
+
   video {
     position: fixed;
     right: 0;
@@ -154,6 +159,11 @@ section {
       font-weight: normal;
       text-align: center;
       font-size: 25px;
+
+      .en & {
+        font-size: 24px;
+      }
+
       margin: 0;
     }
     p {
