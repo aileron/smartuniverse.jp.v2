@@ -14,8 +14,8 @@ html {
     font-size: 14px;
   }
   @media screen and (min-width : 1024px){
-    font-size: 16px;
-    min-height: 728px;
+    //font-size: 16px;
+    //min-height: 728px;
   }
 }
 
@@ -32,6 +32,7 @@ section {
 }
 
 .News {
+  background-image: image_url('yoko.png');
   video {
     position: fixed;
     right: 0;
@@ -77,6 +78,7 @@ section {
       margin: 0;
       font-weight: normal;
 
+
       b {
 
       }
@@ -91,7 +93,7 @@ section {
     width: 45%;
 
     @media (max-width: 1200px) {
-      right: 85px;
+      right: 145px;
       width: 384px;
       h1 {
         font-size: 32px;
@@ -217,6 +219,7 @@ section {
   color: white;
 
   .en & {
+    dl{padding-top: 30px}
     dt{font-size: 0.8em}
     dt{width: 23%}
     .small{font-size:0.6em}
@@ -225,11 +228,12 @@ section {
 
   article {
      h1 {
+       font-weight: normal;
        text-align: center;
        letter-spacing: 0.08em;
-       font-family: 'Lato', sans-serif;
      }
      dt {
+       font-weight: normal;
        text-align: center;
        font-weight: bold;
        padding: 10px 0;
@@ -308,6 +312,7 @@ section {
 
   article {
      h1 {
+       color: rgb(80,80,80);
        text-align: center;
        letter-spacing: 0.08em;
        font-family: 'Lato', sans-serif;

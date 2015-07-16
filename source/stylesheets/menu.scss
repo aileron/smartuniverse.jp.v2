@@ -1,22 +1,33 @@
 #lang {
   position: fixed;
   top: 0;
-  left: 0;
-
+  right: 0;
   box-sizing: border-box;
   height: 50px;
-  width: 87px;
   text-align: center;
-
   font-size: 12px;
-  display: block;
-  padding: 15px 0 15px 0;
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid white;
-  background-color: black;
-}
+  padding: 10px 10px 10px 10px;
+  // background-color: black;
 
+
+  color: rgba(255, 255, 255, 0.498039);
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    color: white;
+  }
+
+  .viewing-page-7 & {
+    color: black;
+    a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
 
 .module-triangle-left {
   position: relative;

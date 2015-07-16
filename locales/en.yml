@@ -23,5 +23,6 @@ en:
     name: Name
     email: Your email address
     phone_number: Phone number
+    content_titile: Title 
     content: Description
     submit: Submit

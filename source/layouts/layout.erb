@@ -19,11 +19,15 @@
   <body class="<%= page_classes %>">
     <%= yield %>
 
+    <div id="lang">
     <% if @lang == :ja %>
-        <a id="lang" href="/en">English</a>
+        Japanese /
+        <a href="/en">English</a>
     <% else %>
-        <a id="lang" href="/">Japanese</a>
+        English /
+        <a href="/">Japanese</a>
     <% end %>
+</div>
 
 
   </body>
