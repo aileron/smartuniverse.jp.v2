@@ -196,26 +196,30 @@ section {
     width: 100%;
   }
 
-
   article {
     h1 {
-      font-size: 5em;
+      font-size: 3.4em;
+
+      .en & {
+        font-size: 5em;
+      }
+
       text-align: center;
       margin: 0;
       font-weight: normal;
     }
 
+    p {
+      margin-top: 10px;
+    }
+
     position: absolute;
     margin: 0 auto;
-    width: 560px;
-
-    @media (min-width : 1024px){
-      width: 640px
-    }
+    width: 390px;
 
     top: 140px;
     left: auto;
-    right: 10%;
+    right: 14%;
 
     text-shadow: 0 1px 3px black;
   }
