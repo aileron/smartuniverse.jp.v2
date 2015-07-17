@@ -1,0 +1,40 @@
+html.ua-mobile {
+  video{display: none}
+
+  @media (orientation:portrait){
+    dl {
+      font-size: 20px;
+    }
+
+    section {
+      article {
+        width: 80%;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+
+    .Philosophy-1 {
+      article {
+        width: 75%;
+        left: 5%;
+      }
+    }
+    .Vision {
+      article {
+        top: 40%;
+        bottom: auto;
+      }
+    }
+    .Career {
+      article {
+        top: 20%;
+      }
+    }
+  }
+}
