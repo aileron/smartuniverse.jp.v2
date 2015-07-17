@@ -8,6 +8,19 @@ html.ua-mobile {
       height: 14%;
     }
 
+    .onepage-pagination {
+      width: 150px;
+      font-size: 24px;
+      top: 20px;
+      a:after {
+        top: 12px;
+      }
+
+      a.active[data-index="3"]:after {
+        top: -40px;
+      }
+    }
+
     dl {
       font-size: 20px;
     }
@@ -31,15 +44,19 @@ html.ua-mobile {
         left: 5%;
       }
     }
+    .Philosophy-2 article {
+      top: 30%;
+    }
+
     .Vision {
       article {
-        top: 40%;
+        top: 35%;
         bottom: auto;
       }
     }
     .Career {
       article {
-        top: 20%;
+        top: 25%;
       }
     }
   }

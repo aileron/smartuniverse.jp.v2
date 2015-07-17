@@ -1,4 +1,7 @@
 $ ->
+  $(window).on 'touchmove.noScroll', (e)->
+    e.preventDefault()
+
   $("#news-readmore").click ->
     $("#news-more").fadeIn()
   $(".close").click ->
