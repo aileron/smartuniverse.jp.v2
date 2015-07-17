@@ -2,6 +2,12 @@ html.ua-mobile {
   video{display: none}
 
   @media (orientation:portrait){
+
+    .News h1 {
+      width: 50%;
+      height: 20%;
+    }
+
     dl {
       font-size: 20px;
     }
