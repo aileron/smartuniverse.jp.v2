@@ -1,7 +1,12 @@
 article
   h1=t "contact.title"
 
-  form(method="post" action="http://still-ravine-8044.herokuapp.com")
+  form(method="post" action="https://post2slack.herokuapp.com/")
+    -if development?
+      input(type="hidden" name="site" value="aileron.cc")
+    -else
+      input(type="hidden" name="site" value="smartuniverse.jp")
+
     dl
       dt=t "contact.corporate"
       dd 
