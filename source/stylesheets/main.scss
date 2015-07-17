@@ -79,6 +79,22 @@ section {
   overflow: auto;
 }
 
+section.fadeOut {
+  article {
+    opacity: 0;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  &.active article {
+    opacity: 1;
+  } 
+
+}
+
 .News {
   background-image: image_url('yoko.png');
   .ua-mobile & {
@@ -118,11 +134,14 @@ section {
 }
 
 .Philosophy-1 {
+
+  z-index: 0;
   background-color: rgb(113,20,21);
   background-image: image_url('cover-network.png');
   // background-image: image_url('cover-philosophy-red.png');
   background-position: right top;
   background-size: cover;
+
 
   article {
     z-index: 100000;
@@ -131,8 +150,8 @@ section {
     h1{
       margin: 0;
       font-weight: normal;
-
     }
+    
 
     position: absolute;
     margin: 0 auto;
