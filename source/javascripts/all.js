@@ -1,5 +1,5 @@
-//= require cssua
 //= require jquery
-//= require jquery.livequery.js
-//= require jquery.onepage-scroll.js
-//= require init
+//= require _cssua
+//= require _jquery.livequery.js
+//= require _jquery.onepage-scroll.js
+//= require _init
