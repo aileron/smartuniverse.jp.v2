@@ -5,7 +5,7 @@ $ ->
   $("#news-readmore").click ->
     $("#news-more").fadeIn()
   $(".close").click ->
-    $(this).parent("article").fadeOut()
+    $(this).parent("div").fadeOut()
 
   $('.main').onepage_scroll
     sectionContainer: 'section'
