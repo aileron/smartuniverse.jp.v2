@@ -189,6 +189,11 @@ section.fadeOut {
     color: white;
     position: absolute;
     left: 10%;
+
+    @media (min-width : 1200px){
+      left: 20%;
+    }  
+
     top: 50px;
     width: 300px;
   }
