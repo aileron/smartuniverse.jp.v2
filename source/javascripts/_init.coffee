@@ -4,7 +4,7 @@ $ ->
     play = -> 
       video.currentTime = 0
       video.play()
-    setTimeout play, 5000
+    setTimeout play, 7000
 
   $(window).on 'touchmove.noScroll', (e)->
     e.preventDefault()
@@ -34,7 +34,7 @@ $ ->
       play = -> 
         video.currentTime = 0
         video.play()
-      setTimeout play, 500
+      setTimeout play, 800
 
       section = $('.main section')[ index - 1 ]
       $section = $(section)

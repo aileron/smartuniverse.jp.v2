@@ -90,15 +90,14 @@ section.fadeOut {
   }
 
   video {
-    position: fixed;
-    right: 0;
-    bottom: 0px;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background-size: cover;
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    transform: translateX(-15%) translateY(-22%);
   }
   h1 {
     background-size: 100%;

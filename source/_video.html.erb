@@ -1,0 +1,5 @@
+<%if development? %>
+    <video autoplay="" class="cover-video" muted="" src="http://www.smartuniverse.jp/images/background-big.mp4" type="video/mp4"></video>
+<% else %>
+    <video autoplay="" class="cover-video" muted="" src="<%=image_path "background-big.mp4" %>" type="video/mp4"></video>
+<% end %>
