@@ -58,16 +58,16 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
@@ -97,7 +97,7 @@ activate :sync do |sync|
   sync.existing_remote_files = 'keep'
 
   # ファイルをgzip圧縮したもので置き換えるかどうか。`true`または`false`
-  sync.gzip_compression = false
+  sync.gzip_compression = true
 
   # Middlemanのビルド完了後に自動で同期を行うかどうか。`true`または`false`
   # デフォルトでは行う（`true`）
