@@ -32,7 +32,7 @@ $ ->
         $section.delay(300).fadeIn 1250, ->
           $section.find("[data-fade-in]").each ->
             msec = $(this).data("fade-in")
-            $(this).delay(1250).fadeIn(msec)
+            $(this).fadeIn(msec)
 
     loop: false
     keyboard: true
