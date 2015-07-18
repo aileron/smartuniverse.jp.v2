@@ -1,6 +1,14 @@
 html.ua-mobile {
   video{display: none}
 
+  @media (orientation:landscape){
+    .Philosophy-2 article {
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+
   @media (orientation:portrait){
 
     .News h1 {
