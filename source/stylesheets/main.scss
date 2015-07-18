@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import "normalize";
 @import "onepage-scroll";
 @import "menu";
@@ -81,7 +80,7 @@ section.fadeOut {
 }
 
 .News {
-  background-image: image_url('yoko.png');
+  // background-image: image_url('yoko.png');
   background-repeat: repeat;
   .ua-mobile & {
     background-image: image_url('cover-top.png');
