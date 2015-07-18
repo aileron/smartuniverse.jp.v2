@@ -82,6 +82,7 @@ section.fadeOut {
 
 .News {
   background-image: image_url('yoko.png');
+  background-repeat: repeat;
   .ua-mobile & {
     background-image: image_url('cover-top.png');
     background-size: cover;
