@@ -298,14 +298,15 @@ section.fadeOut {
 
     text-shadow: 0 1px 3px black;
 
-
     @media (min-width: 1200px) {
       width: 560px;;
-      top: 30%;
+      top: 27%;
       h1 {
           font-size: 5em;
       }
-
+      .en & h1 {
+        font-size: 7em;
+      }
     }
   }
 }
@@ -365,7 +366,7 @@ section.fadeOut {
      bottom: 0;
      margin: auto;
      width: 600px;
-     height: 500px;
+     height: 370px;
   }
 }
 
@@ -442,8 +443,9 @@ section.fadeOut {
      top: 0;
      left: 0;
      right: 0;
+     bottom: 0;
      margin: auto;
      width: 600px;
+     height: 420px;
   }
-
 }
