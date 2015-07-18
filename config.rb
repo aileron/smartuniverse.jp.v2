@@ -84,7 +84,7 @@ activate :sync do |sync|
   sync.fog_provider = 'AWS'
 
   # アップロード先となるS3 Bucketの名前
-  sync.fog_directory = 'smartuniverse'
+  sync.fog_directory = 'www.smartuniverse.jp'
 
   # AWSリージョンの識別子。東京リージョンの場合は`ap-northeast-1`
   sync.fog_region = 'ap-northeast-1'
