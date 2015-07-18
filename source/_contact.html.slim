@@ -11,15 +11,15 @@ article
     dl
       dt=t "contact.corporate"
       dd 
-        input(type="text" name="company")
+        input(type="text" name="company" )
 
       dt= t "contact.name"
       dd 
-        input(type="text" name="name")
+        input(type="text" name="name" required)
 
       dt.small= t "contact.email"
       dd
-        input(type="text" name="email")
+        input(type="text" name="email" required)
 
       dt= t "contact.phone_number"
       dd
@@ -27,7 +27,7 @@ article
 
       dt= t "contact.content"
       dd
-        textarea(name="content")
+        textarea(name="content" required)
 
     input(type="submit" value="#{t "contact.submit"}")
 
