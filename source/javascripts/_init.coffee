@@ -29,7 +29,7 @@ $ ->
       $section.addClass('show')
       console.log("load #{section.className}")
       if $section.hasClass("fadeIn")
-        $section.delay(300).fadeIn 1250, ->
+        $section.delay(500).fadeIn 1250, ->
           $section.find("[data-fade-in]").each ->
             msec = $(this).data("fade-in")
             $(this).fadeIn(msec)
