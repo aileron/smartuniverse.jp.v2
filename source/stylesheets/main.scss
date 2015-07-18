@@ -125,7 +125,7 @@ section.fadeOut {
   background-color: rgb(113,20,21);
   background-image: image_url('cover-network.png');
   // background-image: image_url('cover-philosophy-red.png');
-  background-position: right top;
+  background-position: right center;
   background-size: cover;
 
 
@@ -191,7 +191,7 @@ section.fadeOut {
 
 .Vision {
   background-image: image_url('cover-vision.png');
-  background-position: right bottom;
+  background-position: right center;
   background-size: cover;
 
   article {
@@ -237,7 +237,7 @@ section.fadeOut {
   background-color: black;
   background-image: image_url('cover-career.jpg');
 
-  background-position: right bottom;
+  background-position: right center;
   background-size: cover ;
 
   @media (max-width: 1151px) {
@@ -277,7 +277,7 @@ section.fadeOut {
   background-color: white;
   background-image: image_url('cover-corporate.jpg');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   color: white;
 
   .en & {
