@@ -16,6 +16,12 @@ a:focus, *:focus { outline:none; }
   font-size: 30px;
 }
 
+#news-readmore {
+  &:hover {
+    span{ text-decoration: underline; }
+  }
+}
+
 #news-more {
   position: absolute;
   padding: 20px;
@@ -90,14 +96,14 @@ section.fadeOut {
   }
 
   video {
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     position: absolute;
     left: auto;
     right: auto;
     top: auto;
     bottom: auto;
-    transform: translateX(-15%) translateY(-22%);
+    transform: translateY(-8%);
   }
   h1 {
     background-size: 100%;
