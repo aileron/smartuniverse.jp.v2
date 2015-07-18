@@ -21,4 +21,4 @@ gem "middleman-jquery"
 
 # deploy
 gem "middleman-deploy"
-
+gem 'middleman-sync'

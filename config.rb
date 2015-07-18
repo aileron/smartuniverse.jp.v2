@@ -78,3 +78,28 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'gh-pages'
 end
+
+activate :sync do |sync|
+  # 利用するストレージプロバイダの識別子。S3を利用する場合は`AWS`
+  sync.fog_provider = 'AWS'
+
+  # アップロード先となるS3 Bucketの名前
+  sync.fog_directory = 'smartuniverse'
+
+  # AWSリージョンの識別子。東京リージョンの場合は`ap-northeast-1`
+  sync.fog_region = 'ap-northeast-1'
+
+  # AWSアクセスキー
+  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+
+  # アップロード時に既存ファイルを削除するかどうか。`delete`または`keep`
+  sync.existing_remote_files = 'keep'
+
+  # ファイルをgzip圧縮したもので置き換えるかどうか。`true`または`false`
+  sync.gzip_compression = false
+
+  # Middlemanのビルド完了後に自動で同期を行うかどうか。`true`または`false`
+  # デフォルトでは行う（`true`）
+  sync.after_build = false
+end

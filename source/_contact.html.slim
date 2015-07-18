@@ -1,6 +1,7 @@
 article
   h1=t "contact.title"
 
+  //form(method="post" action="http://localhost:3000")
   form(method="post" action="https://post2slack.herokuapp.com/")
     -if development?
       input(type="hidden" name="site" value="aileron.cc")
