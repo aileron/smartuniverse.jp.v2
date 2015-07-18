@@ -1,6 +1,9 @@
 $ ->
-  document.querySelector(".News video").addEventListener "ended", ->
-    play = -> document.querySelector(".News video").currentTime = 0
+  video =  document.querySelector(".News video")
+  video.addEventListener "ended", ->
+    play = -> 
+      video.currentTime = 0
+      video.play()
     setTimeout play, 5000
 
   $(window).on 'touchmove.noScroll', (e)->
@@ -18,7 +21,7 @@ $ ->
     pagination: true
     updateURL: true
     beforeMove: (index) ->
-      document.querySelector(".News video").pause()
+      video.pause()
 
       section = $('.main section')[ index - 1 ]
       $section = $(section)
@@ -28,7 +31,10 @@ $ ->
           $(this).hide()
 
     afterMove: (index) ->
-      document.querySelector(".News video").currentTime = 0
+      play = -> 
+        video.currentTime = 0
+        video.play()
+      setTimeout play, 500
 
       section = $('.main section')[ index - 1 ]
       $section = $(section)

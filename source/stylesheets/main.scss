@@ -4,6 +4,8 @@
 @import "menu";
 @import "mobile";
 
+a:focus, *:focus { outline:none; }
+
 .close {
   text-align: right;
   cursor: pointer;
@@ -275,7 +277,7 @@ section.fadeOut {
     margin: 0 auto;
     width: 390px;
 
-    top: 75px;
+    top: 145px;
     left: auto;
     right: 14%;
 
