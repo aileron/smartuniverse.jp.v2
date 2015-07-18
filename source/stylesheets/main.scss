@@ -137,24 +137,25 @@ section.fadeOut {
     h1{
       margin: 0;
       font-weight: normal;
+      text-align: center;
+      padding: 0;
     }
-    
 
     position: absolute;
     margin: 0 auto;
     left: auto;
 
-    width: 45%;
+    width: 393px;
+    h1 {
+      font-size: 32px;
+    }
 
     @media (max-width: 1200px) {
       right: 145px;
-      width: 384px;
-      h1 {
-        font-size: 32px;
-      }
+
     }
     top: 30%;
-    right: 10%;
+    right: 17%;
   }
 }
 
@@ -177,13 +178,14 @@ section.fadeOut {
       font-weight: normal;
       font-size: 48px;
       margin: 0;
+      padding: 0;
     }
     h2 {
       text-align: center;
       font-weight: normal;
       font-size: 30px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
 
     color: white;
@@ -191,7 +193,7 @@ section.fadeOut {
     left: 10%;
 
     @media (min-width : 1200px){
-      left: 20%;
+      left: 15%;
     }  
 
     top: 50px;
@@ -257,7 +259,6 @@ section.fadeOut {
   article {
     h1 {
       font-size: 3.4em;
-
       .en & {
         font-size: 5em;
       }
@@ -268,7 +269,7 @@ section.fadeOut {
     }
 
     p {
-      margin-top: 10px;
+      margin-top: 0px;
     }
 
     position: absolute;
@@ -280,6 +281,15 @@ section.fadeOut {
     right: 14%;
 
     text-shadow: 0 1px 3px black;
+
+
+    @media (min-width: 1200px) {
+      width: 47%;
+      h1 {
+          font-size: 5em;
+      }
+
+    }
   }
 }
 
