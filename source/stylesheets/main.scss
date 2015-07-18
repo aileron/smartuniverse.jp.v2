@@ -131,7 +131,7 @@ section.fadeOut {
   background-color: rgb(113,20,21);
   background-image: image_url('cover-network.png');
   // background-image: image_url('cover-philosophy-red.png');
-  background-position: right center;
+  background-position: right top;
   background-size: cover;
 
   
@@ -145,6 +145,11 @@ section.fadeOut {
       font-weight: normal;
       text-align: center;
       padding: 0;
+
+      .en & {
+          font-size: 28px;
+      }
+
     }
 
     position: absolute;
@@ -233,7 +238,7 @@ section.fadeOut {
       margin: 0;
     }
     p {
-      font-size: 0.95em;
+      font-size: 0.7em;
     }
 
     position: absolute;
@@ -241,7 +246,12 @@ section.fadeOut {
     width: 310px;
     left: auto;
     right: 10%;
-    bottom: 142px;
+    bottom: 135px;
+
+    @media (min-width: 1200px) {
+      bottom: 20%;
+    }
+
   }
 }
 
@@ -291,6 +301,7 @@ section.fadeOut {
 
     @media (min-width: 1200px) {
       width: 560px;;
+      top: 30%;
       h1 {
           font-size: 5em;
       }
