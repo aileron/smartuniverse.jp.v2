@@ -134,8 +134,6 @@ section.fadeOut {
   background-position: right top;
   background-size: cover;
 
-  
-
   article {
     z-index: 100000;
     color: white;
@@ -149,7 +147,6 @@ section.fadeOut {
       .en & {
           font-size: 28px;
       }
-
     }
 
     position: absolute;
@@ -162,11 +159,14 @@ section.fadeOut {
     }
 
     @media (max-width: 1200px) {
-      right: 145px;
-
+      top: 30%;
+      right: 147px
     }
-    top: 30%;
-    right: 17%;
+
+    @media (min-width: 1200px) {
+      right: 17%;
+      top: 33%;
+    }
   }
 }
 
@@ -237,7 +237,7 @@ section.fadeOut {
 
       margin: 0;
     }
-    p {
+    .en & p {
       font-size: 0.7em;
     }
 
