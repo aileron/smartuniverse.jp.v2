@@ -138,6 +138,8 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
+    font-awesome-middleman (4.2.3)
+      middleman-core (~> 3.0)
     formatador (0.2.5)
     haml (4.0.6)
       tilt
@@ -254,6 +256,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-middleman (~> 4.2.3)
   middleman (~> 3.3.12)
   middleman-deploy
   middleman-jquery

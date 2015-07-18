@@ -18,7 +18,9 @@ gem "slim", "~> 3.0.1"
 
 # assets
 gem "middleman-jquery"
+gem "font-awesome-middleman", "~> 4.2.3"
 
 # deploy
 gem "middleman-deploy"
 gem 'middleman-sync'
+
