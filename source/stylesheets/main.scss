@@ -3,7 +3,6 @@
 @import "onepage-scroll";
 @import "menu";
 @import "mobile";
-@import 'slabtext';
 @import "font-awesome";
 
 a:focus, *:focus { outline:none; }
@@ -36,6 +35,10 @@ a:focus, *:focus { outline:none; }
 #news-readmore {
   &:hover {
     span{ text-decoration: underline; }
+  }
+  width: 360px;
+  span {
+    float: right;
   }
 }
 

@@ -22,5 +22,5 @@ gem "font-awesome-middleman", "~> 4.2.3"
 
 # deploy
 gem "middleman-deploy"
-gem 'middleman-sync'
+gem 'middleman-s3_sync'
 

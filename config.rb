@@ -79,27 +79,18 @@ activate :deploy do |deploy|
   deploy.branch = 'gh-pages'
 end
 
-activate :sync do |sync|
-  # 利用するストレージプロバイダの識別子。S3を利用する場合は`AWS`
-  sync.fog_provider = 'AWS'
-
-  # アップロード先となるS3 Bucketの名前
-  sync.fog_directory = 'www.smartuniverse.jp'
-
-  # AWSリージョンの識別子。東京リージョンの場合は`ap-northeast-1`
-  sync.fog_region = 'ap-northeast-1'
-
-  # AWSアクセスキー
-  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
-  sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
-
-  # アップロード時に既存ファイルを削除するかどうか。`delete`または`keep`
-  sync.existing_remote_files = 'keep'
-
-  # ファイルをgzip圧縮したもので置き換えるかどうか。`true`または`false`
-  sync.gzip_compression = true
-
-  # Middlemanのビルド完了後に自動で同期を行うかどうか。`true`または`false`
-  # デフォルトでは行う（`true`）
-  sync.after_build = false
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'www.smartuniverse.jp' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'ap-northeast-1'     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY_ID']
+  s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_ACCESS_KEY']
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+  s3_sync.prefix                     = ''
+  s3_sync.version_bucket             = false
 end

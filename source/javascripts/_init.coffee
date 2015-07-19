@@ -20,7 +20,9 @@ $ ->
     animationTime: 1000
     pagination: true
     updateURL: true
-    beforeMove: (index) ->
+    beforeMove: (index,pos) ->
+      console.log(pos)
+
       video.pause()
 
       section = $('.main section')[ index - 1 ]
@@ -30,7 +32,8 @@ $ ->
         $section.find("[data-fade-in]").each ->
           $(this).hide()
 
-    afterMove: (index) ->
+    afterMove: (index,pos) ->
+      console.log(pos)
       play = -> 
         video.currentTime = 0
         video.play()
