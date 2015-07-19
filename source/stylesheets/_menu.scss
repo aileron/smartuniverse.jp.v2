@@ -8,11 +8,16 @@
 }
 
 #lang {
+  font-size: 0.15rem;
+
+  .ua-mobile & {
+    font-size: 30px;
+  }
+
   position: fixed;
   top: 0;
   right: 0;
   box-sizing: border-box;
-  height: 50px;
   text-align: center;
   font-size: 12px;
   padding: 10px 10px 10px 10px;
