@@ -31,9 +31,18 @@
     h2 {
       font-size: 0.28rem;
       margin-left: -0.13rem;
+
+      .en & {
+        font-size: 0.24rem;
+        margin-left: -0.04rem;
+      }
     }
     p {
       font-size: 0.111rem;
+      .en & {
+        font-size: 0.1rem;
+        line-height: 120%;
+      }
     }
   }
 }

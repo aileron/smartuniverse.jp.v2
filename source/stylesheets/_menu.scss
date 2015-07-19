@@ -55,19 +55,9 @@
   }
 }
 
-.module-triangle-left {
-  position: relative;
-
-  &:after {
-    content: "";
-    border: 8px solid transparent;
-    border-left-color: white;
-    position: absolute;
-    left: -12px;
-    top: 10px;
-  }
+.onepage-pagination li:nth-child(3) {
+  height: 0;
 }
-
 .onepage-pagination a {
   color: white;
   font-family: AppleGothic, 'AppleGothic Regular', "ヒラギノ角ゴ Pro W3", sans-serif;
@@ -75,9 +65,9 @@
 
   &[data-index="1"]:before { content: "News"; }
   &[data-index="2"]:before { content: "Philosophy"; }
-  // &[data-index="3"] { display: none; }
+  &[data-index="3"] {   visibility: hidden; }
   &.active[data-index="3"]:after {
-    top: -30px;
+    top: -40px;
   }
 
   &[data-index="4"]:before { content: "Vision"; }
@@ -87,15 +77,31 @@
 }
 
 .onepage-pagination {
+
+  .ua-mobile & {
+    @media (orientation:portrait){
+      top: 0;
+      font-size: 32px;
+      a {
+        padding: 10px 30px;
+        &.active[data-index="3"]:after {
+          top: -50px;
+        }
+        &.active:after {
+          top: 30px;
+        } 
+      }
+    }
+  }
+
   background-color: rgba(0,0,0,0.8);
+  padding: 0;
   position: fixed;
   left: 0;
   top: 50px;
   z-index: 5;
   list-style: none;
   margin: 0;
-  width: 75px;
-  padding: 15px 0 15px 12px;
   li {
     margin:0;
     padding: 0;
@@ -106,15 +112,28 @@
     }
 
     a {
-      margin: 0;
-      padding: 0;
-      display: block;
-      line-height: 40px;
-      box-sizing: border-box;
       text-decoration: none;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      display: block;
+
+      padding-left: 20px;
+      padding-right: 20px;
+      line-height: 60px;
 
       &.active {
-        @extend .module-triangle-left;
+        position: relative;
+
+        &:after {
+          content: "";
+          border: 8px solid transparent;
+          border-left-color: white;
+          position: absolute;
+          top: 20px;
+          left: 0;
+          visibility: visible;
+        }
       }
       &:before {
 

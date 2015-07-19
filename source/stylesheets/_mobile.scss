@@ -6,24 +6,7 @@ html.ua-mobile {
   }
 
   @media (orientation:portrait){
-    .onepage-pagination {
-      
-    }
-
-    .onepage-pagination {
-      width: 150px;
-      font-size: 24px;
-      top: 20px;
-      a:after {
-        top: 12px;
-      }
-
-      a.active[data-index="3"]:after {
-        top: -40px;
-      }
-    }
-
-    dl {
+     dl {
       font-size: 13px;
     }
 
@@ -31,7 +14,7 @@ html.ua-mobile {
       article {
         width: 80%;
         p {
-          font-size: 0.28rem;
+          font-size: 0.28rem !important;
         }
       }
     }
@@ -57,9 +40,9 @@ html.ua-mobile {
     .Philosophy-2 { 
       background-position: center bottom;
       article {
-        top: 2rem;
+        top: 3.7rem;
         h1 {
-          font-size:1rem;
+          font-size:0.5rem;
         }
         h2 {
           margin-top:0.4rem;
@@ -72,6 +55,9 @@ html.ua-mobile {
       article {
         top: 35%;
         bottom: auto;
+
+        h1{font-size: 0.5rem}
+        h2{font-size: 0.4rem}
       }
     }
     .Career {
