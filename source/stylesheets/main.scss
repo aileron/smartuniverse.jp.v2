@@ -1,3 +1,12 @@
+/*
+ *= require font-awesome
+ *= require _normalize
+ *= require _onepage-scroll
+ *= require _menu
+ *= require _mobile
+ *= require_tree ./pages
+ */
+
 @charset "utf-8";
 @import "normalize";
 @import "onepage-scroll";
@@ -80,7 +89,9 @@ html {
 }
 
 body {
+  font: 13px/1.231 arial,helvetica,clean,sans-serif;
   font-family: "Apple TP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, sans-serif;
+  line-height: 1.8
 }
 
 h1,h2,p {
@@ -126,49 +137,6 @@ section.fadeOut {
   }
   &.active article,&.displayed article {
     opacity: 1;
-  }
-}
-
-.News {
-  // background-image: image_url('yoko.png');
-  background-repeat: repeat;
-  .ua-mobile & {
-    background-image: image_url('cover-top.png');
-    background-size: cover;
-    background-position: center center;
-  }
-
-  video {
-    // transform: translateY(-8%);
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-52%);
-    transform: translateX(-50%) translateY(-52%);
-  }
-  h1 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: image_url('logo_white.png');
-    width: 463px;
-    height: 112px;
-
-    color: white;
-    text-shadow: 0 1px 3px black;
-    font-size: 54px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
   }
 }
 
