@@ -21,8 +21,16 @@ $ ->
     animationTime: 1000
     pagination: true
     updateURL: true
-    beforeMove: null
-    afterMove: null
+
+    beforeMove: (index) ->
+      video.pause()
+
+    afterMove: (index) ->
+      play = -> 
+        video.currentTime = 0
+        video.play()
+      setTimeout play, 500
+
     loop: false
     keyboard: true
     responsiveFallback: false
