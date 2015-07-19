@@ -95,14 +95,13 @@ section {
 section.fadeOut {
   article {
     opacity: 0;
-
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  &.active article {
+  &.active article,&.displayed article {
     opacity: 1;
   }
 }
@@ -276,6 +275,27 @@ section.fadeOut {
 }
 
 .Career {
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition-duration: 1.25s;
+  transition-property: opacity;
+  &.active {
+    opacity: 1;
+  }
+
+  article {
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+  }
+  &.active article {
+    opacity: 1;
+    transition-delay: 1.75s;
+    transition-duration: 1s;
+    transition-property: opacity;
+  }
+
   .right {
     text-align: right;
   }
