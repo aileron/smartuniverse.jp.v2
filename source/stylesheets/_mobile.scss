@@ -79,6 +79,19 @@ html.ua-mobile {
         }
       }
     }
+    .Corporate {
+      font-size: 32px;
+      dt {
+        font-size: 20px;
+        &.small{ font-size: 14px }
+      }
+      dd {
+        font-size: 26px;
+
+        &.description {font-size: 15px}
+        &.small{ font-size: 14.5px }
+      }
+    }
     .Contact article {
       width: 90%;
       dl {
