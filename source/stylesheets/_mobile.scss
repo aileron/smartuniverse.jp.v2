@@ -104,9 +104,30 @@ html.ua-mobile {
       }
     }
     .Contact article {
-      width: 90%;
+      top: 10%;
+      bottom: auto;
+      form {
+        width: 50%;
+        margin: 0px auto;
+      }
+      h1 {
+        font-size: 50px;
+      }
       dl {
         font-size: 0.21rem;
+      }
+      dd,dt{
+        float: none;
+        float: none;
+        text-align: left;
+        width: 100%;
+      }
+      dt {
+        font-size: 30px !important;
+      }
+      dd {
+        margin-left: 0;
+        margin-bottom: 20px;
       }
     }
   }
