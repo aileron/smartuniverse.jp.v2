@@ -6,6 +6,11 @@ html.ua-mobile {
   }
 
   @media (orientation:portrait){
+    #news-readmore {
+      width: 30%;
+      font-size: 16px;
+    }
+
      dl {
       font-size: 13px;
     }
