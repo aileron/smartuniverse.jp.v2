@@ -81,6 +81,10 @@ html.ua-mobile {
     }
     .Corporate {
       font-size: 32px;
+      dt,dd{
+        line-height: 32px;
+        box-sizing: border-box;
+      }
       dt {
         font-size: 20px;
         &.small{ font-size: 14px }
@@ -88,7 +92,9 @@ html.ua-mobile {
       dd {
         font-size: 26px;
 
-        &.description {font-size: 15px}
+        &.description {
+          font-size: 15px;
+        }
         &.small{ font-size: 14.5px }
       }
     }
