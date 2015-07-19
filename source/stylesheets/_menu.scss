@@ -66,19 +66,14 @@
 
 .onepage-pagination a {
   color: white;
+  font-family: AppleGothic, 'AppleGothic Regular', "ヒラギノ角ゴ Pro W3", sans-serif;
+  letter-spacing: 1px;
 
   &[data-index="1"]:before { content: "News"; }
   &[data-index="2"]:before { content: "Philosophy"; }
   // &[data-index="3"] { display: none; }
   &.active[data-index="3"]:after {
-    display: block;
-    content: "";
-    border: 8px solid transparent;
-    border-left-color: white;
-    position: absolute;
-    left: -12px;
-    top: -30px;
-    margin-top: -8px;
+    top: -32px;
   }
 
   &[data-index="4"]:before { content: "Vision"; }

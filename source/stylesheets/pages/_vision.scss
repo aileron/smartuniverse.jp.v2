@@ -1,0 +1,41 @@
+.Vision {
+  background-image: image_url('cover-vision.png');
+  background-position: 0% center;
+  background-size: cover;
+
+  article {
+    color: white;
+
+    h1 {
+      font-weight: normal;
+      margin: 0;
+      text-align: center;
+    }
+    h2 {
+      font-weight: normal;
+      text-align: center;
+      margin: 0;
+    }
+    position: absolute;
+    margin: auto;
+    left: auto;
+    right: 0.9rem;
+    top: 0;
+    bottom: -0.5rem;
+    width: 3rem;
+    height: 2rem;
+
+    h1 {
+      font-size: 0.45rem;
+    }
+    h2 {
+      font-size: 0.28rem;
+      margin-left: -0.13rem;
+    }
+    p {
+      font-size: 0.111rem;
+    }
+  }
+}
+
+

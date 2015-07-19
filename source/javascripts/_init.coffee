@@ -6,6 +6,10 @@ $ ->
       video.play()
     setTimeout play, 7000
 
+  $('html').fitText()
+  $(window).on 'resize', (e)->
+    $('html').fitText()
+
   $(window).on 'touchmove.noScroll', (e)->
     e.preventDefault()
 
@@ -24,6 +28,8 @@ $ ->
 
     beforeMove: (index) ->
       video.pause()
+      lng =$('#lang a')
+      lng.attr 'href', lng.attr('href').split('#')[0] + location.hash
 
     afterMove: (index) ->
       play = -> 
@@ -35,3 +41,4 @@ $ ->
     keyboard: true
     responsiveFallback: false
     direction: 'vertical'
+

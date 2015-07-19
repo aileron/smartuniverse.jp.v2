@@ -1,0 +1,63 @@
+.Career {
+  background-color: black;
+  background-image: image_url('cover-career-transparent.png');
+
+  background-position: 0 center;
+  background-size: cover ;
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  p {margin: 0}
+
+  @media (max-width: 1151px) {
+    width: 100%;
+  }
+
+  article {
+    text-shadow: 0 1px 3px black;
+    h1 {
+      text-align: center;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    div {
+      margin-top: 0.2rem;
+    }
+
+    p {
+      margin-top: 0px;
+    }
+
+    position: absolute;
+    margin: 0 auto;
+    width: 4.24rem;
+
+    top: 21%;
+    left: 0;
+    right: -3rem;
+
+    h1{ 
+      font-size: 0.53rem;
+    }
+    .en & h1 {
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.15rem;
+      line-height: 150%;
+    }
+
+
+  }
+}
+
+

@@ -1,0 +1,44 @@
+.Philosophy-2 {
+  background-image: image_url('cover-philosophy.png');
+  background-size: 100%;
+  background-position: center center;
+
+  article {
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+    }
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    color: white;
+    position: absolute;
+
+    width: 3rem;
+    left: 1rem;
+    top: 0.5rem;
+
+    h1 {
+      font-size: 0.6rem;
+    }
+    h2 {
+      font-size: 0.25rem;
+      .ja & {font-size: 0.3rem}
+
+      @media (orientation:portrait){
+      }
+    }
+    p {
+      font-size: 0.115rem;
+      .ua-desktop.ja & {font-size: 0.12rem}
+    }
+  }
+}
+
+

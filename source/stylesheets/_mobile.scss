@@ -2,24 +2,12 @@ html.ua-mobile {
   video{display: none}
 
   @media (orientation:landscape){
-    .Philosophy-2 article {
-      h2 {
-        font-size: 28px;
-      }
-    }
+
   }
 
   @media (orientation:portrait){
     .onepage-pagination {
       
-    }
-
-    .News h1 {
-      width: 80%;
-      height: 14%;
-
-      background-size: 100%;
-      background-position: center center;
     }
 
     .onepage-pagination {
@@ -36,34 +24,48 @@ html.ua-mobile {
     }
 
     dl {
-      font-size: 20px;
+      font-size: 13px;
     }
 
     section {
       article {
         width: 80%;
-      }
-
-      h1 {
-        font-size: 50px;
-      }
-      p {
-        font-size: 30px;
-      }
-    }
-
-    .Philosophy-1 {
-      background-position: 80% top;
-      article {
-        width: 75%;
-        left: 5%;
-
-        h1 {
+        p {
+          font-size: 0.28rem;
         }
       }
     }
-    .Philosophy-2 article {
-      top: 30%;
+
+    .News .logo {
+      width: 80%;
+      height: 14%;
+
+      background-size: 100%;
+      background-position: center center;
+    }
+
+
+    .Philosophy-1 {
+      background-position: 90% top;
+      article {
+        width: 75%;
+        left: 0;
+        right: 0;
+        top: 30%;
+      }
+    }
+    .Philosophy-2 { 
+      background-position: center bottom;
+      article {
+        top: 2rem;
+        h1 {
+          font-size:1rem;
+        }
+        h2 {
+          margin-top:0.4rem;
+          font-size:0.5rem;
+        }
+      }
     }
 
     .Vision {
@@ -73,13 +75,28 @@ html.ua-mobile {
       }
     }
     .Career {
+      background-position: 30% center;
+      .cover {
+        background-color: rgba(0,0,0,0.5);
+      }
+      
       article {
         top: 25%;
+        right: 0;
+
+        div {
+          margin-top: 80px;
+        }
+
+        p {
+          font-size: 0.32rem;
+        }
       }
     }
     .Contact article {
+      width: 90%;
       dl {
-        font-size: 2em;
+        font-size: 0.21rem;
       }
     }
   }

@@ -8,14 +8,7 @@
  */
 
 @charset "utf-8";
-@import "normalize";
-@import "onepage-scroll";
-@import "menu";
-@import "mobile";
-@import "font-awesome";
-
 a:focus, *:focus { outline:none; }
-
 
 #scroll-down-caret {
   position: fixed;
@@ -73,25 +66,31 @@ a:focus, *:focus { outline:none; }
   }
 }
 
-
-
 html {
   background-repeat: repeat;
   background-color: black;
-  font-size: 12px;
-  @media screen and (min-width : 768px) {
-    font-size: 14px;
-  }
-  @media screen and (min-width : 1024px){
-    //font-size: 16px;
-    //min-height: 728px;
-  }
 }
 
 body {
   font: 13px/1.231 arial,helvetica,clean,sans-serif;
   font-family: "Apple TP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, sans-serif;
   line-height: 1.8
+}
+
+.en-title {
+  font-family: AppleGothic, 'AppleGothic Regular', "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+
+body.en h1 {
+  @extend .en-title;
+}
+
+h1 {
+  white-space: nowrap; 
+  line-height: 100%;
+}
+h2 {
+  white-space: nowrap; 
 }
 
 h1,h2,p {
@@ -101,6 +100,10 @@ h1,h2,p {
 section {
   overflow: auto;
   background-repeat: no-repeat;
+}
+
+article p {
+  text-align: justify;
 }
 
 .fadeInOut {
@@ -126,7 +129,7 @@ section {
   }
 }
 
-section.fadeOut {
+.fadeOut {
   article {
     opacity: 0;
     -webkit-transition: all 0.3s;
@@ -140,251 +143,6 @@ section.fadeOut {
   }
 }
 
-.Philosophy-1 {
-
-  z-index: 0;
-  background-color: rgb(113,20,21);
-  background-image: image_url('cover-network.png');
-  background-position: right top;
-  background-size: cover;
-
-  article {
-    z-index: 100000;
-    color: white;
-
-    h1{
-      margin: 0;
-      font-weight: normal;
-      text-align: center;
-      padding: 0;
-
-      .en & {
-          font-size: 28px;
-      }
-    }
-
-    position: absolute;
-    margin: 0 auto;
-    left: auto;
-
-    width: 393px;
-    h1 {
-      font-size: 32px;
-    }
-
-    @media (max-width: 1200px) {
-      top: 30%;
-      right: 147px
-    }
-
-    @media (min-width: 1200px) {
-      right: 17%;
-      top: 33%;
-    }
-  }
-}
-
-.Philosophy-2 {
-  background-image: image_url('cover-philosophy.png');
-  background-size: 100%;
-  background-position: center center;
-
-  .en & {
-    .text {
-      text-align: center;
-    }
-    h2 {
-      font-size: 22px;
-    }
-  }
-
-  article {
-    h1 {
-      text-align: center;
-      font-weight: normal;
-      font-size: 48px;
-      margin: 0;
-      padding: 0;
-    }
-    h2 {
-      text-align: center;
-      font-weight: normal;
-      font-size: 30px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    color: white;
-    position: absolute;
-    left: 10%;
-
-    @media (min-width : 1200px){
-      left: 15%;
-    }  
-
-    top: 50px;
-    width: 300px;
-  }
-}
-
-.Vision {
-  background-image: image_url('cover-vision.png');
-  background-position: 0% center;
-  background-size: cover;
-
-  article {
-    color: white;
-
-    h1 {
-      font-size: 50px;
-      font-weight: normal;
-      margin: 0;
-      text-align: center;
-    }
-    h2 {
-      font-weight: normal;
-      text-align: center;
-      font-size: 25px;
-
-      .en & {
-        font-size: 24px;
-      }
-
-      margin: 0;
-    }
-    .en & p {
-      font-size: 0.7em;
-    }
-
-    position: absolute;
-    margin: 0 auto;
-    width: 310px;
-    left: auto;
-    right: 10%;
-    bottom: 135px;
-
-    @media (min-width: 1200px) {
-      bottom: 20%;
-    }
-
-  }
-}
-
-.Career {
-
-  .right {
-    text-align: right;
-  }
-
-  p {margin: 0}
-
-  background-color: black;
-  background-image: image_url('cover-career.jpg');
-
-  background-position: 0% center;
-  background-size: cover ;
-
-  @media (max-width: 1151px) {
-    width: 100%;
-  }
-
-  article {
-    h1 {
-      font-size: 3.4em;
-      .en & {
-        font-size: 5em;
-      }
-
-      text-align: center;
-      margin: 0;
-      font-weight: normal;
-    }
-
-    p {
-      margin-top: 0px;
-    }
-
-    position: absolute;
-    margin: 0 auto;
-    width: 390px;
-
-    top: 145px;
-    left: auto;
-    right: 14%;
-
-    text-shadow: 0 1px 3px black;
-
-    @media (min-width: 1200px) {
-      width: 560px;;
-      top: 27%;
-      h1 {
-          font-size: 5em;
-      }
-      .en & h1 {
-        font-size: 7em;
-      }
-    }
-  }
-}
-
-.Corporate {
-  background-color: white;
-  background-image: image_url('cover-corporate.jpg');
-  background-size: cover;
-  background-position: center center;
-  color: white;
-
-  .en & {
-    dl{padding-top: 30px}
-    dt{font-size: 0.8em}
-    dt{width: 23%}
-    .small{font-size:0.6em}
-    line-height: 1em;
-  }
-
-  article {
-     h1 {
-       font-weight: normal;
-       text-align: center;
-       letter-spacing: 0.08em;
-     }
-     dt {
-       font-weight: normal;
-       text-align: center;
-       font-weight: bold;
-       padding: 10px 0;
-       float:left;
-       clear:left;
-       width:20%;
-
-       border-bottom: 1px solid white;
-       &:first-child {
-         border-top: 1px solid white;
-       }
-     }
-
-     dd {
-       font-size: 0.9em;
-       float:left;
-       width:70%;
-
-       padding: 10px 0;
-       border-top: 1px solid white;
-       &:last-child {
-         border-bottom: 1px solid white;
-       }
-     }
-
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     margin: auto;
-     width: 600px;
-     height: 370px;
-  }
-}
 
 .Contact {
   background-color: white;
