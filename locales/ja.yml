@@ -19,6 +19,7 @@ ja:
 
   contact:
     title: お問い合わせ
+    required: "* = 必須"
     corporate: 会社名
     name: 名前
     email: メールアドレス

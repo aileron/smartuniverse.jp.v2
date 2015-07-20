@@ -1,7 +1,6 @@
 .Contact {
   background-color: white;
 
-  font-family: "Roboto";
   color: rgb(80,80,80);
   .en & {
     dt{ font-size: 0.8em; line-height: 1em }
@@ -44,6 +43,16 @@
        color: rgb(80,80,80);
        text-align: center;
        letter-spacing: 0.08em;
+     }
+     h2 {
+       color: red;
+       font-size: 13px;
+       text-align: right;
+     }
+     span {
+       color: red;
+       margin-left: 1em;
+       margin-right: -1em;
      }
      dt {
        box-sizing: border-box;

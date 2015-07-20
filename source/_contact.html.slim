@@ -1,5 +1,6 @@
 article
   h1=t "contact.title"
+  h2=t "contact.required"
 
   //form(method="post" action="http://localhost:3000")
   form(method="post" action="https://post2slack.herokuapp.com/")
@@ -13,11 +14,15 @@ article
       dd 
         input(type="text" name="company" )
 
-      dt= t "contact.name"
+      dt
+        = t "contact.name"
+        span *
       dd 
         input(type="text" name="name" required)
 
-      dt.small= t "contact.email"
+      dt.small
+        = t "contact.email"
+        span *
       dd
         input(type="text" name="email" required)
 
@@ -25,7 +30,9 @@ article
       dd
         input(type="text" name="phone_number")
 
-      dt= t "contact.content"
+      dt
+        = t "contact.content"
+        span *
       dd
         textarea(name="content" required)
 

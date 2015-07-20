@@ -19,6 +19,7 @@ en:
 
   contact:
     title: Contact us
+    required: "* = required"
     corporate: Corporate Name
     name: Name
     email: Email address

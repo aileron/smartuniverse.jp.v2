@@ -17,6 +17,7 @@ html.ua-mobile {
         width: 80%;
         p {
           font-size: 0.28rem !important;
+          line-height: 0.30rem;
         }
       }
     }
@@ -44,7 +45,7 @@ html.ua-mobile {
       }
     }
     .Philosophy-2 { 
-      background-position: center bottom;
+      background-position: center center;
       article {
         top: 3.7rem;
         h1 {
@@ -88,8 +89,19 @@ html.ua-mobile {
         }
       }
     }
-    .Corporate {
+
+    &.en .Corporate article h1 {
+      font-size: 40px !important;
+    }
+
+    .Corporate article {
       font-size: 32px;
+
+      h1{
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
       dt,dd{
         line-height: 32px;
         box-sizing: border-box;
@@ -116,6 +128,7 @@ html.ua-mobile {
       }
       h1 {
         font-size: 50px;
+
       }
       dl {
         font-size: 0.21rem;

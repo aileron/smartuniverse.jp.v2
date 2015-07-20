@@ -22,7 +22,7 @@
 
     width: 3rem;
     left: 1rem;
-      left: 1.5rem;
+    left: 1.5rem;
     top: 0.5rem;
 
     h1 {
@@ -38,7 +38,12 @@
     }
     p {
       font-size: 0.1rem;
-      .ua-desktop.ja & {font-size: 0.12rem}
+
+      .ua-desktop.ja & {
+        font-size: 0.12rem;
+        line-height: 0.16rem;
+        margin-top: 0;
+      }
     }
   }
 }
