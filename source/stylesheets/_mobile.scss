@@ -33,10 +33,14 @@ html.ua-mobile {
     .Philosophy-1 {
       background-position: 90% top;
       article {
+        h1 {
+          font-size: 54px;
+        }
         width: 75%;
         left: 0;
         right: 0;
         top: 35%;
+        bottom: auto;
       }
     }
     .Philosophy-2 { 

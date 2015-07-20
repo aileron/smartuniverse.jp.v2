@@ -1,4 +1,7 @@
 $ ->
+  #$(window).on 'resize', (e)->
+  #  console.log Math.sqrt(window.height * window.width) 
+
   video =  document.querySelector(".News video")
   video.addEventListener "ended", ->
     play = -> 
