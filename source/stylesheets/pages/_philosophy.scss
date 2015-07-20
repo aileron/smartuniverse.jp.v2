@@ -1,7 +1,7 @@
 .Philosophy-2 {
   background-image: image_url('cover-philosophy.png');
   background-size: 100%;
-  background-position: center center;
+  background-position: center 0;
 
   article {
     h1 {
@@ -22,10 +22,12 @@
 
     width: 3rem;
     left: 1rem;
+      left: 1.5rem;
     top: 0.5rem;
 
     h1 {
-      font-size: 0.6rem;
+      // font-size: 0.6rem;
+      font-size: 0.45rem;
     }
     h2 {
       font-size: 0.25rem;
@@ -35,7 +37,8 @@
       }
     }
     p {
-      font-size: 0.115rem;
+      font-size: 0.1rem;
+      letter-spacing: 0.01rem;
       .ua-desktop.ja & {font-size: 0.12rem}
     }
   }

@@ -1,0 +1,79 @@
+.Contact {
+  background-color: white;
+
+  font-family: "Roboto";
+  color: rgb(80,80,80);
+  .en & {
+    dt{ font-size: 0.8em; line-height: 1em }
+    .small {font-size: 0.7em }
+  }
+
+  input,textarea{
+    border: none;
+    outline: none;
+    width: 100%;  -webkit-appearance: none;
+  }
+  input {
+    margin:0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    margin: 0 auto;
+    color: #666;
+    background: white;
+    border: none;
+    line-height: 1.4em;
+    font-size: 18px;
+    padding: 1em 3em;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    margin-top: 20px;
+  }
+  textarea {
+    resize: vertical;
+    height: 100px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+  }
+
+  article {
+     h1 {
+       margin: 0;
+       color: rgb(80,80,80);
+       text-align: center;
+       letter-spacing: 0.08em;
+     }
+     dt {
+       box-sizing: border-box;
+       text-align: right;
+       font-weight: bold;
+       padding: 10px 0;
+       float:left;
+       clear:left;
+       width:20%;
+       line-height: 1em;
+     }
+
+     dd {
+       line-height: 1em;
+       font-size: 0.9em;
+       float:left;
+       width:70%;
+       border-top: 1px solid white;
+       &:last-child {
+         border-bottom: 1px solid white;
+       }
+     }
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     width: 600px;
+     height: 380px;
+  }
+}

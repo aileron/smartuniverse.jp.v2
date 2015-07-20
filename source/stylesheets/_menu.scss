@@ -12,6 +12,9 @@
 
   .ua-mobile & {
     font-size: 30px;
+    @media (orientation:landscape){
+      font-size: 20px;
+    }
   }
 
   position: fixed;
@@ -25,18 +28,18 @@
 
   color: rgba(255, 255, 255, 0.498039);
 
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
+    -webkit-transition: color 2s;
+    -moz-transition: color 2s;
+    -ms-transition: color 2s;
+    -o-transition: color 2s;
+    transition: color 2s;
 
   a {
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
+    -webkit-transition: color 2s;
+    -moz-transition: color 2s;
+    -ms-transition: color 2s;
+    -o-transition: color 2s;
+    transition: color 2s;
 
     text-decoration: none;
     &:hover {
@@ -66,9 +69,7 @@
   &[data-index="1"]:before { content: "News"; }
   &[data-index="2"]:before { content: "Philosophy"; }
   &[data-index="3"] {   visibility: hidden; }
-  &.active[data-index="3"]:after {
-    top: -40px;
-  }
+
 
   &[data-index="4"]:before { content: "Vision"; }
   &[data-index="5"]:before { content: "Career"; }
@@ -76,24 +77,32 @@
   &[data-index="7"]:before { content: "Contact"; }
 }
 
-.onepage-pagination {
-
-  .ua-mobile & {
-    @media (orientation:portrait){
-      top: 0;
-      font-size: 32px;
-      a {
-        padding: 10px 30px;
-        &.active[data-index="3"]:after {
-          top: -50px;
-        }
-        &.active:after {
-          top: 30px;
-        } 
-      }
+.ua-mobile .onepage-pagination {
+  @media (orientation:landscape){
+    li a {
+      
     }
   }
 
+  @media (orientation:portrait){
+    top: 0;
+    font-size: 32px;
+    a {
+      line-height: 60px;
+      font-size: 32px;
+      padding: 10px 30px;
+      &.active[data-index="3"]:after {
+        top: -50px;
+      }
+      &.active:after {
+        top: 30px;
+      } 
+    }
+  }
+}
+
+
+.onepage-pagination {
   background-color: rgba(0,0,0,0.8);
   padding: 0;
   position: fixed;
@@ -120,7 +129,9 @@
 
       padding-left: 13px;
       padding-right: 13px;
-      line-height: 60px;
+
+      line-height: 40px;
+      font-size: 12px;
 
       &.active {
         position: relative;
@@ -130,9 +141,12 @@
           border: 8px solid transparent;
           border-left-color: white;
           position: absolute;
-          top: 20px;
+          top: 10px;
           left: 0;
           visibility: visible;
+        }
+        &[data-index="3"]:after {
+          top: -30px;
         }
       }
       &:before {
