@@ -134,7 +134,7 @@ article p {
 
 .fadeInOut {
   opacity: 0;
-  transition-delay: 0.5s;
+  transition-delay: 1s;
   transition-duration: 1.25s;
   transition-property: opacity;
   &.active {
@@ -149,7 +149,7 @@ article p {
   }
   &.active article {
     opacity: 1;
-    transition-delay: 1.75s;
+    transition-delay: 2.25s;
     transition-duration: 1s;
     transition-property: opacity;
   }
