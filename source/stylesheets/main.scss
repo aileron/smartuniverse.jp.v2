@@ -24,24 +24,24 @@ a:focus, *:focus { outline:none; }
   color: rgba(255,255,255,.8);
 }
 
-.close {
-  text-align: right;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white;
-  font-size: 30px;
-}
 
 #news-readmore {
   &:hover {
     span{ text-decoration: underline; }
   }
-  width: 360px;
+  width: 373px;
+  .ua-mobile & {
+    @media (orientation:portrait){
+      width: 420px;
+      font-size: 15px;
+      letter-spacing:-0.19px;
+      bottom: 5px;
+    }
+  }
   span {
     float: right;
   }
+
 }
 
 #news-more {
@@ -50,6 +50,8 @@ a:focus, *:focus { outline:none; }
   background-color: rgba(0,0,0,0.8);
   width: 300px;
   height: 350px;
+
+
   position: absolute;
   top: 0;
   left: 0;
@@ -64,6 +66,28 @@ a:focus, *:focus { outline:none; }
       font-size: 0.8em;
     }
   }
+
+  .ua-mobile & {
+    @media (orientation:portrait){
+      width: 80%;
+      height: 40%;
+      bottom: -20%; 
+      font-size: 24px;
+    }
+    @media (orientation:landscape){
+      width: 60%;
+    }
+  }
+}
+
+.close {
+  text-align: right;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 30px;
 }
 
 html {

@@ -1,16 +1,13 @@
 html.ua-mobile {
   video{display: none}
 
+  /* 横 */
   @media (orientation:landscape){
 
   }
 
+  /* 縦 */
   @media (orientation:portrait){
-    #news-readmore {
-      width: 30%;
-      font-size: 16px;
-    }
-
      dl {
       font-size: 13px;
     }
