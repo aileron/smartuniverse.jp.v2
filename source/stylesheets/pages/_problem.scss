@@ -1,5 +1,4 @@
 .Philosophy-1 {
-
   z-index: 0;
   background-color: rgb(113,20,21);
   background-image: image_url('cover-network.png');
@@ -9,7 +8,6 @@
   article {
     z-index: 100000;
     color: white;
-
     h1{
       margin: 0;
       font-weight: normal;
@@ -26,7 +24,7 @@
     height: 1.2rem;
     right: -4rem;
     bottom: 0;
-    top: -1rem;
+    top: 0rem;
     left: 0;
 
     h1 {
@@ -35,7 +33,5 @@
     p {
       font-size: 0.1177rem;
     }
-
-
   }
 }

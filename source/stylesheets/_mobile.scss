@@ -14,7 +14,7 @@ html.ua-mobile {
 
     section {
       article {
-        width: 80%;
+        width: 70%;
         p {
           font-size: 0.28rem !important;
           line-height: 0.30rem;
@@ -38,9 +38,9 @@ html.ua-mobile {
           font-size: 32px;
         }
         width: 75%;
-        left: 10%;
+        left: 0;
         right: 0;
-        top: 36%;
+        top: 37%;
         bottom: auto;
       }
     }
@@ -77,11 +77,11 @@ html.ua-mobile {
       }
       
       article {
-        top: 30%;
+        top: 35%;
         right: 0;
 
         div {
-          margin-top: 80px;
+          //margin-top: 80px;
         }
 
         p {
@@ -107,16 +107,16 @@ html.ua-mobile {
         box-sizing: border-box;
       }
       dt {
-        font-size: 20px;
-        &.small{ font-size: 14px }
+        font-size: 15px;
+        &.small{ font-size: 12px }
       }
       dd {
         font-size: 26px;
 
         &.description {
-          font-size: 15px;
+          font-size: 13px;
         }
-        &.small{ font-size: 14.5px }
+        &.small{ font-size: 12px }
       }
     }
     .Contact article {
