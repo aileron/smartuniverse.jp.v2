@@ -31,10 +31,18 @@
 
     div {
       margin-top: 0.2rem;
+
+      .en & {
+        margin-top: 0;
+      }
     }
 
     p {
       margin-top: 0px;
+    }
+
+    .en & .margin-top {
+      margin-top: 1em;
     }
 
     position: absolute;
