@@ -10,17 +10,19 @@
     color: white;
     h1{
       margin: 0;
+      margin-left: -0.01rem;
       font-weight: normal;
       text-align: center;
       padding: 0;
-      b {
+      .en & b {
         font-size: 0.35rem;
       }
+
     }
 
     position: absolute;
     margin: auto;
-    width: 4rem;
+    width: 3.8rem;
     height: 1.2rem;
     right: -4rem;
     bottom: 0;
@@ -28,7 +30,8 @@
     left: 0;
 
     h1 {
-      font-size: 0.29rem;
+      font-size: 0.32rem;
+      margin-left: -0.08rem;
     }
     p {
       font-size: 0.1177rem;
