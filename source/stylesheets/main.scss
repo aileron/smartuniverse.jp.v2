@@ -150,11 +150,12 @@ article p {
     transition-delay: 1s;
     transition-duration: 1.25s;
     transition-property: opacity;
+
     article {
       opacity: 1;
-      transition-delay: 2.25s;
-      transition-duration: 1s;
-      transition-property: opacity;
+      //transition-delay: 2s;
+      //transition-duration: 1s;
+      //transition-property: opacity;
     }
   }
 }
