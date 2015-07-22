@@ -47,6 +47,8 @@
 #   end
 # end
 
+mime_type :mp4, "video/mp4"
+
 activate :i18n, :mount_at_root => false 
 
 set :css_dir, 'stylesheets'
