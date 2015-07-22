@@ -16,7 +16,7 @@ html.ua-mobile {
       article {
         width: 70%;
         p {
-          font-size: 0.28rem !important;
+          font-size: 0.28rem;
           line-height: 0.30rem;
         }
       }
@@ -50,13 +50,11 @@ html.ua-mobile {
 
 
       article {
-        top: 3.7rem;
+        top: 3.9rem;
         h1 {
           font-size:0.5rem;
         }
         h2 {
-          margin-top:0.4rem;
-          font-size:0.5rem;
         }
         p {
           letter-spacing: -0.01rem;
@@ -82,13 +80,20 @@ html.ua-mobile {
       article {
         top: 35%;
         right: 0;
+        width: 75%;
+
+        h1 {
+          margin-bottom: 0.2rem;
+        } 
 
         div {
           //margin-top: 80px;
         }
 
         p {
-          font-size: 0.32rem;
+          $size: 0.37rem;
+          font-size: $size;
+          line-height: $size; 
         }
       }
     }

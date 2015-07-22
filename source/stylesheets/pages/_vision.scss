@@ -32,16 +32,17 @@
       font-size: 0.28rem;
       margin-left: -0.13rem;
 
-      .en & {
+      .ua-desktop.en & {
         font-size: 0.24rem;
         margin-left: -0.04rem;
       }
+
     }
     p {
       font-size: 0.111rem;
       line-height: 0.16rem;
       margin-top: 0;
-      .en & {
+      .ua-desktop.en & {
         font-size: 0.1rem;
       }
     }

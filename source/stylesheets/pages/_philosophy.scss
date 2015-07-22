@@ -31,6 +31,8 @@
     }
     h2 {
       font-size: 0.25rem;
+      margin: 0;
+
       .ja & {font-size: 0.3rem}
 
       @media (orientation:portrait){
@@ -38,11 +40,14 @@
     }
     p {
       font-size: 0.1rem;
+      margin: 0;
 
       .ua-desktop.ja & {
         font-size: 0.12rem;
         line-height: 0.16rem;
-        margin-top: 0;
+      }
+      .ua-desktop.en & {
+        line-height: 0.16rem;
       }
     }
   }
