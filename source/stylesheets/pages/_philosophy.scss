@@ -36,6 +36,9 @@
       .ja & {font-size: 0.3rem}
 
       @media (orientation:portrait){
+        .ua-mobile & {
+          font-size: 0.4rem;
+        }
       }
     }
     p {
