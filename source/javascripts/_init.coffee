@@ -1,4 +1,11 @@
 $ ->
+  show = ->
+    $(window).trigger "loaded"
+    $('#cover').fadeOut 300, ()->
+      $(this).remove()
+
+  setTimeout show, 2000
+
   video =  document.querySelector(".News video")
   video.addEventListener "ended", ->
     play = -> 

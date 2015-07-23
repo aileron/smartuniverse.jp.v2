@@ -7,6 +7,10 @@ $ ->
   $atp = $('#article-position')
 
   resize_img = ->
+    console.log "resize----------------------"
+    console.log "#{$bg.width()}:#{$bg.height()}"
+    console.log "#{theWindow.width()}:#{theWindow.height()}"
+
     aspectRatio = $bg.width() / $bg.height()
     if theWindow.width() / theWindow.height() < aspectRatio
       $bg.removeClass().addClass 'height'
@@ -16,6 +20,5 @@ $ ->
       $bg.removeClass().addClass 'width'
       $atp.html ".atp{ top: #{$bg.height() * 0.30}px; right:#{$bg.width() * 0.11}px}"
 
-  $bg.on 'load', resize_img
-
+  $(window).on 'loaded', resize_img 
   $(window).on 'resize', resize_img
