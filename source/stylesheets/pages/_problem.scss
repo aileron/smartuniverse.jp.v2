@@ -18,19 +18,14 @@
     color: white;
     h1{
       margin: 0;
-      margin-left: -0.01rem;
       font-weight: normal;
       text-align: center;
       padding: 0;
-      .en & b {
-        font-size: 0.35rem;
-      }
-
     }
 
     position: absolute;
-    width: 3.8rem;
-    height: 1.2rem;
+    height: 0.38em;
+    width: 1em;
 
     //margin: auto;
     //right: -4rem;
@@ -39,11 +34,16 @@
     //left: 0;
 
     h1 {
-      font-size: 0.32rem;
-      margin-left: -0.08rem;
+      font-size: 0.08em;
+      .en & {
+        font-size: 0.08em;
+      }
+      b {
+        font-size: 1.1em;
+      }
     }
     p {
-      font-size: 0.1177rem;
+      font-size: 0.029em;
     }
   }
 }
