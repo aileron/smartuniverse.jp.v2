@@ -50,7 +50,20 @@ html.ua-mobile {
     .Philosophy-2 { 
 
       background-size: 250%;
-      background-position: 50% -300%;
+      background-position: 50% -100%;
+
+      background: none;
+
+      img {
+        position: absolute;
+        margin: auto;
+
+        top: 0;
+        bottom: -50%;
+        left:-50%;
+        right: 0;
+        width: 250%;
+      }
 
 
       article {
