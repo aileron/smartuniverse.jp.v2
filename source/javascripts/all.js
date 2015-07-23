@@ -4,3 +4,4 @@
 //= require _jquery.onepage-scroll
 //= require _jquery.fittext
 //= require _init
+//= require _problem

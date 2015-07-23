@@ -1,7 +1,15 @@
 .Philosophy-1 {
+  
+  img {
+    position: absolute; top: 0; right: 0; 
+
+    &.width {width: 100%}
+    &.height{height: 100%}
+  }
+
   z-index: 0;
   background-color: rgb(113,20,21);
-  background-image: image_url('cover-network.png');
+  // background-image: image_url('cover-network.png');
   background-position: right top;
   background-size: cover;
 
@@ -21,13 +29,14 @@
     }
 
     position: absolute;
-    margin: auto;
     width: 3.8rem;
     height: 1.2rem;
-    right: -4rem;
-    bottom: 0;
-    top: 0rem;
-    left: 0;
+
+    //margin: auto;
+    //right: -4rem;
+    //bottom: 0;
+    //top: 0rem;
+    //left: 0;
 
     h1 {
       font-size: 0.32rem;
