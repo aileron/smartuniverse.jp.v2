@@ -41,7 +41,7 @@
       margin-top: 0px;
     }
 
-    .en & .margin-top {
+    .ua-mobile & .margin-top {
       margin-top: 1em;
     }
 
@@ -62,7 +62,23 @@
     p {
       font-size: 0.11rem;
       line-height: 150%;
-      text-shadow: 0 1px 3px black, 0 -1px 3px black;
+      // text-shadow: 0 1px 3px black, 0 -1px 3px black;
+      text-shadow: 0 1px 3px black;
+
+
+      @media (orientation:portrait){
+        .en.ua-mobile & {
+          $size: 0.37rem;
+          font-size: $size;
+          line-height: $size;
+        }
+        .ja.ua-mobile & {
+          $size: 0.4rem;
+          font-size: $size;
+          line-height: 1.2;
+        }
+      }
+
     }
   }
 }
