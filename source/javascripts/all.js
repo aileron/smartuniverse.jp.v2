@@ -3,5 +3,7 @@
 //= require _jquery.livequery
 //= require _jquery.onepage-scroll
 //= require _jquery.fittext
+//= require _jquery.fasttap.js
 //= require _init
 //= require _problem
+//= require _menu

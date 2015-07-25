@@ -1,4 +1,6 @@
 $ ->
+  $('a, label, button, input[type="button"]').fasttap()
+
   show = ->
     $(window).trigger "loaded"
     $('#cover').fadeOut 300, ()->
